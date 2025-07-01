@@ -1,3 +1,5 @@
+namespace: dev-environment
+
 replicaCount: 1
 
 image:
