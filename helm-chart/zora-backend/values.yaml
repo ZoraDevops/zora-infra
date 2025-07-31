@@ -1,0 +1,32 @@
+namespace: dev-environment
+
+replicaCount: 1
+
+image:
+  repository: 192.168.10.222:5001/zora-backend
+  pullPolicy: IfNotPresent
+  tag: "1.0.0"
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  hosts:
+    - host: backend.zora.local
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []  # No TLS for local dev
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
