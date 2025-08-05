@@ -3,7 +3,7 @@ namespace: dev-environment
 replicaCount: 1
 
 image:
-  repository: 192.168.10.222:5001/zora-backend
+  repository: 192.168.10.222:5001/zora-customer
   pullPolicy: IfNotPresent
   tag: "1.0.0"
 
@@ -17,7 +17,7 @@ ingress:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
   hosts:
-    - host: backend.zora.local
+    - host: customer.zora.local
       paths:
         - path: /
           pathType: Prefix
