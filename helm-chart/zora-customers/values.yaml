@@ -3,7 +3,7 @@ namespace: dev-environment
 replicaCount: 1
 
 image:
-  repository: 192.168.10.222:5001/zora-customer
+  repository: 192.168.10.222:5000/zora-customer
   pullPolicy: IfNotPresent
   tag: "1.0.0"
 
