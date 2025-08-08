@@ -10,7 +10,7 @@ image:
 service:
   type: ClusterIP
   port: 80        # Exposed port for ingress
-  targetPort: 8081  # Actual app port inside the container
+  targetPort: 8080  # Actual app port inside the container
 
 ingress:
   enabled: true
