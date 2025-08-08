@@ -1,14 +1,14 @@
 {{/*
 Generate a full name using the release name and the chart name
 */}}
-{{- define "react.fullname" -}}
+{{- define "customer.fullname" -}}
 {{- printf "%s-%s" .Release.Name .Chart.Name | trunc 63 | trimSuffix "-" -}}
 {{- end }}
 
 {{/*
 Standard labels
 */}}
-{{- define "react.labels" -}}
+{{- define "customer.labels" -}}
 helm.sh/chart: {{ .Chart.Name }}-{{ .Chart.Version }}
 app.kubernetes.io/name: {{ .Chart.Name }}
 app.kubernetes.io/instance: {{ .Release.Name }}
