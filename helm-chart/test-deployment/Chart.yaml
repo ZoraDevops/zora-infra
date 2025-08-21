@@ -1,0 +1,7 @@
+apiVersion: v2
+name: zora-test
+description: A Helm chart for testing of dev environments
+type: application
+version: 1.0.0
+appVersion: "1.0"
+
