@@ -18,7 +18,7 @@ ingress:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
   hosts:
-    - host: customers.zora.local
+    - host: test-deploy.local
       paths:
         - path: /
           pathType: Prefix
