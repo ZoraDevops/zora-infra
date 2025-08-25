@@ -3,7 +3,7 @@ namespace: zora-dev
 replicaCount: 1
 
 image:
-  repository: http://192.168.40.130:8081/repository/docker-test/zora-test
+  repository: 192.168.40.130:8081/repository/docker-test/zora-test
   pullPolicy: IfNotPresent
   tag: "1.0.0"
 
