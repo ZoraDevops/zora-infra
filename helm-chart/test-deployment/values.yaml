@@ -14,12 +14,11 @@ service:
   type: ClusterIP
   port: 80        # Exposed port for ingress
   targetPort: 8080  # Actual app port inside the container
-
+  
 ingress:
   enabled: true
-  className: "nginx"
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+  className: "traefik"
+  annotations: {}
   hosts:
     - host: test-deploy.local
       paths:
