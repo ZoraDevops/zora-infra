@@ -1,5 +1,5 @@
 apiVersion: v2
-name: docker-test
+name: test-deploy
 description: A Helm chart for testing of dev environments
 type: application
 version: 1.0.0
